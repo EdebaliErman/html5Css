@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+    </head>
+<style>
+    .example-main {
+        margin: 30px;
+        padding: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 50px bold;
+        border-radius: 30px;
+        color: whitesmoke;
+        background-color: rgba(240, 9, 9, 0.609);
+        box-shadow: 2px 2px 2px 2px rgba(56, 60, 2, 0.342);
+    }
+
+    button,
+    input,
+    textarea {
+        background-color: rgb(239, 238, 236);
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 6px;
+        border-radius: 45px;
+        align-items: center;
+        border: white 2px;
+        color: rgb(237, 192, 11);
+        font-size: bold 20px;
+        box-shadow: 2px 2px rgb(240, 186, 6);
+    }
+
+    button:hover,
+    input:hover,
+    textarea:hover {
+        box-shadow: 1px 5px 1px rgba(57, 56, 56, 0.499);
+    }
+
+    .example-one {
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 50px bold;
+        border-radius: 30px;
+        width: 15%;
+        color: rgb(12, 12, 12);
+        background-color: rgba(9, 128, 240, 0.609);
+        box-shadow: 2px 2px 2px 2px rgba(56, 60, 2, 0.342);
+    }
+</style>
+
+<body>
+    <div class="example-main">
+        <h1 style="text-align:center ;">INPUT İŞLEMLERİ HAKKINDA</h1>
+        <h2>Color</h2>
+        <ul>
+            <li>
+                <h3> alanı için renk tanımlamakta kullanılır.</h3>
+            </li>
+        </ul>
+        <h2>date</h2>
+        <ul>
+            <li>
+                <h3>Kullanıcıya bir takvim içinden zaman işaretleme olanağı sağlar.</h3>
+            </li>
+        </ul>
+        <h2>datetime</h2>
+        <ul>
+            <li>
+                <h3>Kullanıcıya tarih ve zaman seçme olanağı sağlar.</h3>
+            </li>
+        </ul>
+        <h2>datetime-local</h2>
+        <ul>
+            <li>
+                <h2>email</h2>
+                <ul>
+                    <li>
+                        <h3>Bir e-posta alanı olması gereken giriş alanları için kullanılır.</h3>
+                    </li>
+                </ul>
+                <h2>month</h2>
+                <ul>
+                    <li>
+                        <h3>Kullanıcıya yıl ve ay seçme olanağı sağlar.</h3>
+                    </li>
+                </ul>
+                <h2>number</h2>
+                <ul>
+                    <li>
+                        <h3>Sadece sayısal bilgi girişleri için kullanılır. Girilecek sayı için sınırlar
+                            getirebilirsiniz.</h3>
+                    </li>
+                    <li>
+                        <input type="number" min="0" max="10" />
+                    </li>
+                </ul>
+                <h2>range</h2>
+                <ul>
+                    <li>
+                        <h3>Sayılardan oluşan bir aralık belirler. number parametresine benzer şekilde kullanılır</h3>
+                    </li>
+                </ul>
+                <h2>search:</h2>
+                <ul>
+                    <li>
+                        <h3>Arama alanları için kullanılır.</h3>
+                    </li>
+                </ul>
+                <h2>tel</h2>
+                <ul>
+                    <li>
+                        <h3>Telefon numarası girmek için kullanılabilecek bir alan tanımlar.</h3>
+                    </li>
+                </ul>
+                <h2>time</h2>
+                <ul>
+                    <li>
+                        <h3>Yukarı/aşağı düğmeleriyle zaman bilgisi girmek için kullanılır.</h3>
+                    </li>
+                </ul>
+                <h2>url</h2>
+                <ul>
+                    <li>
+                        <h3>Bir URL adresi içermesi gereken alanlar için kullanılır.</h3>
+                    </li>
+                </ul>
+                <h2>week</h2>
+                <ul>
+                    <li>
+                        <h3>Kullanıcıya bir yıl ve hafta seçme olanağı sağlar.</h3>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <div class="example-one">
+        <form id="temas" method="post" action="">
+
+            <label for="ad">Ad</label><br />
+            <input type="text" ad="ad"><br />
+            <label for="email">E-mail</label><br />
+            <input type="email" ad="email"><br />
+            <label for="password">Parola</label><br />
+            <input type="password" ad="email"><br />
+            <label for="telefon">Telefon</label><br />
+            <input type="tel" ad="telefon"><br />
+            <label for="website">Website</label><br />
+            <input type="url" ad="url"><br />
+            <label for="website">Website</label><br />
+            <input type="date" ad="url" min="1950-01-01" max="2022-01-01"><br />
+            <label for="mesaj">Soru/CYorum</label><br />
+            <textarea ad="mesaj"></textarea><br />
+            <input type="text" name="ARA" id="ARA" placeholder="GIRIS YAP" list="ARA_S" autocomplete="off">
+            <datalist id="ARA_S">
+                <option>Tevfik Fikret</option>
+                <option>Cenap Şahabettin</option>
+            </datalist>
+            <input type="file" name="img" multiple>
+            <input type="submit" ad="submit" id="submit" value="Mesaj Gonder" /><br />
+            <br>
+    </div>
+</body>
+
+</html>

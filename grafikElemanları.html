@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #canvas {
+            height: 300px;
+            width: 300px;
+            border: solid 3px;
+            border-color: grey;
+        }
+
+        body {
+            text-align: center;
+
+        }
+        .example-main {
+        margin: 30px;
+        padding: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 50px bold;
+        border-radius: 30px;
+        color: whitesmoke;
+        background-color: rgba(194, 9, 240, 0.172);
+        box-shadow: 2px 2px 2px 2px rgba(56, 60, 2, 0.342);
+    }
+    </style>
+</head>
+
+<body>
+<div class="example-main">
+    
+    <canvas id="canvas"></canvas>
+    <br>
+    <canvas id="canvas2"></canvas>
+    <br>
+    <canvas id="canvas3"></canvas>
+    <br>
+    <canvas id="canvas4" width="300" height="300"></canvas>
+    <br>
+    <!-----------YUVARLAK DAİRE--------------------->
+    <svg height="300" width="300">
+        <circle cx="150" cy="150" r="120" stroke="orange" stroke-width="5" fill="grey" />
+    </svg>
+    <br>
+    <svg hiight="300" width="300">
+        <polyline 
+        points="20,25 40,45 60,70 90,125 127,145 205,190"
+        style="fill:none ;stroke:orange; stroke-width: 23px ;"
+        >
+
+        </polyline>
+    </svg>
+    <!------------------CANVAS2--------------------->
+    <script>
+        let canvas2 = document.getElementById("canvas2")
+        context2 = canvas2.getContext("2d")
+        context2.fillStyle = 'blue'
+        context2.fillRect(10,20, 200, 100)
+    </script>
+    <!------------------CANVAS3--------------------->
+    <script>
+        let canvas3 = document.getElementById("canvas3")
+        context3 = canvas2.getContext("2d")
+        context3.fillStyle = 'green'
+        context3.fillRect(20, 20, 300, 100)
+       
+    </script>
+    <!------------------CANVAS4------------------->
+    <script>
+        let canvas4 = document.getElementById("canvas4")
+        let context4 = canvas4.getContext("2d")
+        context4.moveTo(0, 0)
+        context4.lineTo(300, 150)
+        context4.strokeStyle = "#grey"
+        context4.lineWidth = 20
+        context4.stroke()
+    </script>
+    
+</div>
+
+</body>
+
+</html>

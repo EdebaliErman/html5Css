@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function countNumber() {
+            let oneHundred = 1000
+            let j
+            for (let i = 0; i <=oneHundred; i++) {
+                j = i;
+            }
+            alert("NUMBER OF ITERATION =======> " + j)
+        }
+        function Message() {
+            alert("hello world")
+        }
+       
+    </script>
+    <style>
+        body {
+            
+        margin-left: 40%;
+        margin-top: 20%;
+    }
+
+        button,
+        input {
+            background-color: orange;
+            height: auto;
+            width: auto;
+            padding: 10px;
+            margin: 6px;
+            border-radius: 45px;
+            align-items: center;
+            border: white 2px;
+            color: white;
+            font-size: bold 20px;
+            box-shadow: 2px 2px white;
+            text-align: center;
+        }
+
+        button:hover,
+        input:hover {
+            box-shadow: 1px 5px 1px rgba(57, 56, 56, 0.499);
+        }
+
+        .example-one {
+            margin: 30px;
+            padding: 30px;
+            border-radius: 30px;
+
+            width: 300px;
+            background-color: rgba(63, 170, 241, 0.227);
+            box-shadow: 2px 2px 2px 2px rgba(56, 60, 2, 0.342);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example-one">
+        <input type="button" onclick="countNumber()" value="Sayma"></button>
+        <input type="button" onclick="Message()" value="Mesaj"></button>
+    </div>
+    <div id="conclusion"></div>
+</body>
+
+</html>
